@@ -1,0 +1,19 @@
+[
+    {
+        "id": 1,
+        "priority": 1,
+        "action": {
+            "type": "modifyHeaders",
+            "requestHeaders": [
+                {
+                    "operation": "set",
+                    "header": "Cache-Control",
+                    "value": "no-cache"
+                }
+            ]
+        },
+        "condition": {
+            "urlFilter": "||m*c.music.126.net"
+        }
+    }
+]

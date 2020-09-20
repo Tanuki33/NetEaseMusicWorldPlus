@@ -1,0 +1,19 @@
+[
+    {
+        "id": 1,
+        "priority": 1,
+        "action": {
+            "type": "modifyHeaders",
+            "requestHeaders": [
+                {
+                    "operation": "set",
+                    "header": "X-Real-IP",
+                    "value": "211.161.244.70"
+                }
+            ]
+        },
+        "condition": {
+            "domains": ["music.163.com"]
+        }
+    }
+]

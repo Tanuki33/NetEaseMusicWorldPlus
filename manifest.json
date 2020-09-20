@@ -17,7 +17,27 @@
 	},
 	"browser_action": {},
 	"manifest_version": 2,
-	"permissions": ["*://music.163.com/", "*://*.music.126.net/", "storage", "webRequest", "webRequestBlocking"],
+	"permissions": [
+		"*://music.163.com/",
+		"*://*.music.126.net/",
+		"storage",
+		"declarativeNetRequest",
+		"declarativeNetRequestFeedback"
+	],
+	"declarative_net_request": {
+		"rule_resources": [
+			{
+				"id": "source",
+				"enabled": false,
+				"path": "rules/source.json"
+			},
+			{
+				"id": "cache",
+				"enabled": false,
+				"path": "rules/cache.json"
+			}
+		]
+	},
 	"name": "__MSG_name__",
 	"author": "nondanee",
 	"version": "0.0.5"
